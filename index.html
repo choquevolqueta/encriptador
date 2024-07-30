@@ -7,7 +7,25 @@
 </head>
 <body>
    <header></header>
-   <main></main>
+   <main>
+    <div class="container__encriptador">
+        <h1 class="Titulo">Ingrese el texto aqui</h1>
+        <textarea id="texto-a-encriptar" class="container__encriptador__textarea" rows="5" placeholder="Escribe aquí el texto a encriptar/desencriptar"></textarea>
+        <div class="container__encriptador__advertencia">
+            <img src="./assets/bi_exclamation-circle-fill.png" alt="simbolo de advertencia">
+            <p class="container__encriptador__advertencia__parrafo">Por favor solo minusculas, sin caracteres especiales ni tildes</p>
+        </div>
+        <div class="container__encriptador__botones">
+            <button>Encriptar</button>
+            <button>Desencriptar</button>
+        </div>
+    </div>
+    <div class="container__encriptado">
+        <img src="./assets/Muñeco.png" alt="muneco de alura">
+        <h2 class="container__encriptado__subtitulo">Ningun mensaje fue encontrado</h2>
+        <textarea name="texto" id="texto-encriptado" placeholder="Ingresa primero el texto a encriptar o desencriptar"></textarea>
+    </div>
+</main>
    <footer></footer> 
 </body>
 </html>
