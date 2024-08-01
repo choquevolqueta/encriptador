@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
    <header></header>
@@ -20,10 +21,12 @@
             <button onclick="desencriptar();">Desencriptar</button>
         </div>
     </div>
-    <div class="container__encriptado">
+    <div class="container__encriptado__vacio" id="container-vacio">
         <img src="./assets/Muñeco.png" alt="muneco de alura">
         <h2 class="container__encriptado__subtitulo">Ningun mensaje fue encontrado</h2>
         <p class="container__encriptado__parrafo">Ingresa primero el texto a encriptar o desencriptar</p>
+    </div>    
+    <div class="container__encriptado__lleno" id="container-lleno">    
         <textarea name="texto" id="texto-encriptado" ></textarea>
         <button onclick="copiar();">Copiar</button>
     </div>
