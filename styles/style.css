@@ -1,5 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --backgroud: #e5e5e5;
+    --fuente-inter: "Inter", "san serif";
+    --color-fuente-uno: darkblue;
+    --color-fuente-dos: gray;
+    --color-tres: #D8DFE8;
+    --color-cuatro-bo: white;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
 
 #container-lleno {
 
     display: none;
 }
+
+body {
+    background-color: var(--backgroud) ;
+    box-sizing: border-box;
+    color: var(--color-fuente-uno);
+    padding: 2.5rem 2.5rem 2.5rem 40px;
+    font-family: var(--fuente-inter);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__encriptador {
+    padding: 0 0 0 12.5rem;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.container__encriptador__box {
+    font-size: 2rem;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container__encriptador__textarea {
+    width: 680px;
+    height: 300px;
+    background-color: var(--backgroud);
+    border: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--color-fuente-uno);
+}
+
+.container__encriptador__advertencia {
+    display: flex;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color:var(--color-fuente-dos);
+    padding: 0.75rem 0 0.75rem 0;
+
+}
+
+.container__encriptador__advertencia__img {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.container__encriptador__botones {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.container__encriptador__botones__e {
+    background-color: var(--color-fuente-uno);
+    width: 20.5rem;
+    padding: 1.5rem;
+    border-radius: 24px;
+    color: var(--color-cuatro-bo);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+.container__encriptador__botones__d {
+    background-color: var(--color-tres);
+    width: 20.5rem;
+    padding: 1.5rem;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: var(--color-fuente-uno);
+    font-weight: 600;
+    border: none;
+}
+

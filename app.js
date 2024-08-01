@@ -29,7 +29,7 @@ function desencriptar() {
         .replace(/ufat/g, 'u');
     document.getElementById('texto-encriptado').value = desencryptedText
     function activar() {
-        document.getElementById("container-vacio").style.display = "hidden";
+        document.getElementById("container-vacio").style.display = "none";
         document.getElementById("container-lleno").style.display = "block";
     
     }

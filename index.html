@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-   <header></header>
+   <header><img src="./assets/Logo.png" alt="logo alura"></header>
    <main>
     <div class="container__encriptador">
-        <h1 class="Titulo">Ingrese el texto aqui</h1>
-        <textarea id="texto-a-encriptar" class="container__encriptador__textarea" rows="5" placeholder="Escribe aquí el texto a encriptar/desencriptar"></textarea>
+        <div class="container__encriptador__box">
+            <textarea id="texto-a-encriptar" class="container__encriptador__textarea" rows="5" placeholder="Ingrese el texto aqui"></textarea>
+        </div>
         <div class="container__encriptador__advertencia">
-            <img src="./assets/bi_exclamation-circle-fill.png" alt="simbolo de advertencia">
+            <img src="./assets/bi_exclamation-circle-fill.png" alt="simbolo de advertencia" class="container__encriptador__advertencia__img">
             <p class="container__encriptador__advertencia__parrafo">Por favor solo minusculas, sin caracteres especiales ni tildes</p>
         </div>
         <div class="container__encriptador__botones">
-            <button onclick="encriptar();">Encriptar</button>
-            <button onclick="desencriptar();">Desencriptar</button>
+            <button onclick="encriptar();" class="container__encriptador__botones__e">Encriptar</button>
+            <button onclick="desencriptar();" class="container__encriptador__botones__d">Desencriptar</button>
         </div>
     </div>
     <div class="container__encriptado__vacio" id="container-vacio">
