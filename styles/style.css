@@ -17,7 +17,7 @@
 
 header {
     display: flex;
-    padding: 0 0 5% 0
+    padding: 0 0 3% 0
 }
 
 .header__logo {
@@ -31,6 +31,7 @@ body {
     color: var(--color-fuente-uno);
     padding: 2.5rem 2.5rem 2.5rem 2.5rem;
     font-family: var(--fuente-inter);
+    min-height: 100vh;
 }
 
 main {
@@ -38,6 +39,8 @@ main {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 100%;
+    flex: 1;
 
 }
 
@@ -46,6 +49,7 @@ main {
     display:flex;
     flex-direction: column;
     width: 71%;
+    height: 80%;
     
 }
 
@@ -58,13 +62,15 @@ main {
 
 .container__encriptador__textarea {
     width: 100%;
-    height: 90%;
+    height: auto;
     background-color: var(--backgroud);
     border: none;
     font-weight: 400;
     font-size: 2rem;
     color: var(--color-fuente-uno);
     resize: none;
+    min-height: 51.5vh; /* Tamaño mínimo en rem */
+    max-height: 100vh; /* Tamaño máximo relativo a la altura de la ventana */
 }
 
 .container__encriptador__advertencia {
@@ -133,12 +139,14 @@ main {
     color: var(--color-cinco);
     font-size: 1.5rem;
     font-weight: 500;
+    text-align: center;
 }
 
 .container__encriptado__parrafo {
     color: var(--color-cinco);
     font-size: 1rem;
     font-weight: 400;
+    text-align: center;
 }
 
 #container-lleno {
@@ -155,7 +163,53 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 32px;
+    gap: 2%;
     align-items: center;
 }
 
+.container__encriptado__texto {
+    width: 100%;
+    height: 80%;
+    background-color: var(--color-cuatro-bo);
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-cinco);
+    resize: none;
+    padding: 10%;
+    border-radius: 2rem;
+}
+
+.container__encriptado__boton {
+    background-color: var(--color-tres);
+    width: 90%;
+    padding: 1.5rem;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: var(--color-fuente-uno);
+    font-weight: 600;
+    border: none;
+    margin: 0 auto; 
+    display: block;
+}
+
+footer {
+    background-color: var(--backgroud);
+    padding: 24px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-fuente-uno);
+    position: relative;
+    margin-top: 3%;
+}
+
+@media (min-width: 1400px) {
+    .container__encriptador__textarea {
+        min-height: 69vh; /* Tamaño mínimo en rem */
+    }
+
+    .container__encriptado__texto {
+        height: 89%;
+    }
+}
