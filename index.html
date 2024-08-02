@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-   <header><img src="./assets/Logo.png" alt="logo alura"></header>
+   <header><img src="./assets/Logo.png" alt="logo alura" class="header__logo"></header>
    <main>
     <div class="container__encriptador">
         <div class="container__encriptador__box">
-            <textarea id="texto-a-encriptar" class="container__encriptador__textarea" rows="5" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea id="texto-a-encriptar" class="container__encriptador__textarea" rows="17" placeholder="Ingrese el texto aqui"></textarea>
         </div>
         <div class="container__encriptador__advertencia">
             <img src="./assets/bi_exclamation-circle-fill.png" alt="simbolo de advertencia" class="container__encriptador__advertencia__img">
@@ -28,8 +28,8 @@
         <p class="container__encriptado__parrafo">Ingresa primero el texto a encriptar o desencriptar</p>
     </div>    
     <div class="container__encriptado__lleno" id="container-lleno">    
-        <textarea name="texto" id="texto-encriptado" ></textarea>
-        <button onclick="copiar();">Copiar</button>
+        <textarea name="texto" id="texto-encriptado" class="container__encriptado__texto" ></textarea>
+        <button onclick="copiar();" id="boton-copia" class="container__encriptado__texto__copia">Copiar</button>
     </div>
     </main>
    <footer>
