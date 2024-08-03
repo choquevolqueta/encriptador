@@ -58,7 +58,7 @@ function desencriptar() {
     }
 
         activar()
-    reencuadrar(document.getElementById('texto-encriptado'));
+    
 }
     
 

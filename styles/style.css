@@ -159,18 +159,18 @@ main {
     top: 5%;
     left: 72%;
     width: 25%;
-    height: 90%;
+    min-height: 90%;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2%;
+    gap: 1rem;
     align-items: center;
+    padding: 1%;
 }
 
 .container__encriptado__texto {
     width: 100%;
-    height: 80%;
+    min-height: 73vh;
     background-color: var(--color-cuatro-bo);
     border: none;
     font-weight: 400;
@@ -179,7 +179,8 @@ main {
     resize: none;
     padding: 10%;
     border-radius: 2rem;
-    overflow:hidden;
+    overflow:scroll;
+    
 }
 
 .container__encriptado__boton {
@@ -276,7 +277,7 @@ footer {
         border-radius: 2rem;
         top:  auto;
         left: auto;
-        
+        gap: 1rem;
     }
     
     .container__encriptado__texto {
@@ -284,9 +285,7 @@ footer {
         box-sizing: border-box;
     }
 
-    .container__encriptado__boton {
 
-    }
 }
 @media (min-width: 1400px) {
     .container__encriptador__textarea {
