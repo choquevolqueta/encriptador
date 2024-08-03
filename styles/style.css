@@ -71,6 +71,7 @@ main {
     resize: none;
     min-height: 51.5vh; /* Tamaño mínimo en rem */
     max-height: 100vh; /* Tamaño máximo relativo a la altura de la ventana */
+    overflow: hidden;
 }
 
 .container__encriptador__advertencia {
@@ -178,6 +179,7 @@ main {
     resize: none;
     padding: 10%;
     border-radius: 2rem;
+    overflow:hidden;
 }
 
 .container__encriptado__boton {
@@ -203,7 +205,89 @@ footer {
     position: relative;
     margin-top: 3%;
 }
+@media (max-width:800px) {
+    body {
+        padding: 1rem;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: left;
+        padding-bottom: 4.5rem;
+    }
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container__encriptador {
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
 
+    .container__encriptado__vacio {
+        position: relative;
+        width: 100%;
+        min-height: 31vh;
+        margin-top: 2rem;
+        border-radius: 2rem;
+        top:  auto;
+        left: auto;
+    }
+    
+    .container__encriptador__textarea {
+        font-size: 1.5rem;
+        text-align: center;
+        min-height: 30vh;
+
+    }
+    .container__encriptador__advertencia__img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .container__encriptador__advertencia {
+        font-size: 1.5rem;
+    }
+    
+    .container__encriptador__botones {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .container__encriptador__botones__e,
+    .container__encriptador__botones__d {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+    
+    
+    .container__encriptado__img {
+        display: none;
+    }
+    
+    .container__encriptado__lleno {
+        position: relative;
+        width: 100%;
+        min-height: 31vh;
+        margin-top: 2rem;
+        border-radius: 2rem;
+        top:  auto;
+        left: auto;
+        
+    }
+    
+    .container__encriptado__texto {
+        min-height: 22vh;
+        box-sizing: border-box;
+    }
+
+    .container__encriptado__boton {
+
+    }
+}
 @media (min-width: 1400px) {
     .container__encriptador__textarea {
         min-height: 69vh; /* Tamaño mínimo en rem */

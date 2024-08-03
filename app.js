@@ -1,3 +1,23 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const inputTextarea = document.getElementById('texto-a-encriptar');
+    const outputTextarea = document.getElementById('texto-encriptado');
+
+    inputTextarea.addEventListener('input', function() {
+        // Copia el contenido del inputTextarea al outputTextarea
+        outputTextarea.value = inputTextarea.value;
+
+        // Ajusta la altura del inputTextarea
+        autoExpand(inputTextarea);
+        // Ajusta la altura del outputTextarea
+        autoExpand(outputTextarea);
+    });
+
+    function autoExpand(textarea) {
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+    }
+});
+
 
 function encriptar() {
     //al usar esta funcion la variable texto encriptado y habilita el container lleno
