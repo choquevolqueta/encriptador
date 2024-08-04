@@ -177,9 +177,9 @@ main {
     font-size: 1rem;
     color: var(--color-cinco);
     resize: none;
-    padding: 10%;
+    padding: 10% 10% 0 10%;
     border-radius: 2rem;
-    overflow:scroll;
+    overflow:hidden;
     
 }
 
@@ -206,7 +206,7 @@ footer {
     position: relative;
     margin-top: 3%;
 }
-@media (max-width:800px) {
+@media (max-width:600px) {
     body {
         padding: 1rem;
     }
@@ -283,8 +283,87 @@ footer {
     .container__encriptado__texto {
         min-height: 22vh;
         box-sizing: border-box;
+        text-align: center;
     }
 
+
+}
+
+@media (max-width: 1279px) {
+    body {
+        padding: 1rem;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: left;
+        padding-bottom: 4.5rem;
+    }
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container__encriptador {
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .container__encriptado__vacio {
+        position: relative;
+        width: 100%;
+        min-height: 31vh;
+        margin-top: 2rem;
+        border-radius: 2rem;
+        top:  auto;
+        left: auto;
+    }
+    
+    .container__encriptador__textarea {
+        font-size: 1.5rem;
+        text-align: center;
+        min-height: 30vh;
+
+    }
+    .container__encriptador__advertencia__img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .container__encriptador__advertencia {
+        font-size: 1.5rem;
+    }
+    
+    
+    .container__encriptador__botones__e,
+    .container__encriptador__botones__d {
+        width: 45%;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+    
+    
+    .container__encriptado__img {
+        display: none;
+    }
+    
+    .container__encriptado__lleno {
+        position: relative;
+        width: 100%;
+        min-height: 31vh;
+        margin-top: 2rem;
+        border-radius: 2rem;
+        top:  auto;
+        left: auto;
+        gap: 1rem;
+    }
+    
+    .container__encriptado__texto {
+        min-height: 22vh;
+        box-sizing: border-box;
+        text-align: center;
+    }
 
 }
 @media (min-width: 1400px) {
