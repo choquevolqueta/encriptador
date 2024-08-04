@@ -268,6 +268,7 @@ footer {
     .container__encriptador__botones {
         flex-direction: column;
         gap: 1rem;
+        align-items: center;
     }
     
     .container__encriptador__botones__e,
