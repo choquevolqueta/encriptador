@@ -72,7 +72,12 @@ main {
     min-height: 51.5vh; /* Tamaño mínimo en rem */
     max-height: 100vh; /* Tamaño máximo relativo a la altura de la ventana */
     overflow: hidden;
+    text-transform: lowercase;
 }
+::placeholder {color: var(--color-fuente-uno);}
+    .container__encriptador__textarea:focus {
+        outline: none;
+    }
 
 .container__encriptador__advertencia {
     display: flex;
@@ -103,6 +108,7 @@ main {
     font-size: 1rem;
     font-weight: 600;
     border: none;
+    cursor: pointer;
 }
 .container__encriptador__botones__d {
     background-color: var(--color-tres);
@@ -112,7 +118,8 @@ main {
     font-size: 1rem;
     color: var(--color-fuente-uno);
     font-weight: 600;
-    border: none;
+    border: 1px solid var(--color-fuente-uno) ;
+    cursor: pointer;
 }
 
 .container__encriptado__vacio {
@@ -180,7 +187,11 @@ main {
     padding: 10% 10% 0 10%;
     border-radius: 2rem;
     overflow:hidden;
+    text-transform: lowercase;
     
+}
+.container__encriptado__texto:focus {
+    outline: none;
 }
 
 .container__encriptado__boton {
@@ -194,6 +205,8 @@ main {
     border: none;
     margin: 0 auto; 
     display: block;
+    border: 1px solid var(--color-fuente-uno) ;
+    cursor: pointer;
 }
 
 footer {
