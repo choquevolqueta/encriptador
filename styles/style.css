@@ -72,7 +72,6 @@ main {
     min-height: 51.5vh; /* Tamaño mínimo en rem */
     max-height: 100vh; /* Tamaño máximo relativo a la altura de la ventana */
     overflow: hidden;
-    text-transform: lowercase;
 }
 ::placeholder {color: var(--color-fuente-uno);}
     .container__encriptador__textarea:focus {

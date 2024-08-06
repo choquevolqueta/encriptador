@@ -48,25 +48,30 @@ function reencuadrar(textarea) {
     textarea.style.height = textarea.scrollHeight + 'px'; // Ajusta la altura al scrollHeight
 }
 function desencriptar() {
-    //al usar esta funcion la variable se desencripta y habilita el container lleno
-    let inputText = document.getElementById('texto-a-encriptar').value;
-    let desencryptedText = inputText
-        .replace(/enter/g, 'e')
-        .replace(/imes/g, 'i')
-        .replace(/ai/g, 'a')
-        .replace(/ober/g, 'o')
-        .replace(/ufat/g, 'u');
-    document.getElementById('texto-encriptado').value = desencryptedText
+    const inputText = document.getElementById('texto-a-encriptar').value;
+    const regex = /^[a-z\s]+$/;
+    const ISValid= regex.test(inputText);
+
+    if (ISValid ==false) {
+        alert("solo minusculas porfavor")
+         } else {
+            let desencryptedText = inputText
+            .replace(/enter/g, 'e')
+            .replace(/imes/g, 'i')
+            .replace(/ai/g, 'a')
+            .replace(/ober/g, 'o')
+            .replace(/ufat/g, 'u');
+        document.getElementById('texto-encriptado').value = desencryptedText
 
     
-    function activar() {
-        document.getElementById("container-vacio").style.display = "none";
-        document.getElementById("container-lleno").style.display = "block";
-    
-    }
+        function activar() {
+            document.getElementById("container-vacio").style.display = "none";
+            document.getElementById("container-lleno").style.display = "block";
+        }
 
-        activar()
-    reencuadrar(document.getElementById('texto-encriptado'));
+            activar()
+        reencuadrar(document.getElementById('texto-encriptado'));
+         }
 }
     
 
