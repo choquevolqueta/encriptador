@@ -10,11 +10,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function encriptar() {
-    // Obtiene el texto de entrada
-    let inputText = document.getElementById('texto-a-encriptar').value;
+    
+    
+    const inputText = document.getElementById('texto-a-encriptar').value;
+    const regex = /^[a-z\s]+$/;
+    const ISValid= regex.test(inputText);
+
+    if (ISValid ==false) {
+        alert("solo minusculas porfavor")
+    } else {
     
     // Encripta el texto
-    let encryptedText = inputText
+        let encryptedText = inputText
         .replace(/e/g, 'enter')
         .replace(/i/g, 'imes')
         .replace(/a/g, 'ai')
@@ -22,16 +29,17 @@ function encriptar() {
         .replace(/u/g, 'ufat');
     
     // Asigna el texto encriptado al textarea
-    document.getElementById('texto-encriptado').value = encryptedText;
-    function activar() {
+        document.getElementById('texto-encriptado').value = encryptedText;
+        function activar() {
         document.getElementById("container-vacio").style.display = "none";
         document.getElementById("container-lleno").style.display = "block";
     
-    }
+        }
 
-        activar()
+            activar()
     // Llama a reencuadrar pasando el textarea encriptado
-    reencuadrar(document.getElementById('texto-encriptado'));
+        reencuadrar(document.getElementById('texto-encriptado'));
+    }
 }
 
 // Función reencuadrar
